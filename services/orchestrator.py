@@ -10,6 +10,6 @@ class OrchestratorService:
         try:
             result = self.orchestrator_engine.schedule_execution(task)
             return result
-        except ExecutionException as e:
-            logging.error(f"Execution failed: {str(e)}")
-            raise
+        except Exception as e:
+            # Handle the exception
+            raise ExecutionException(str(e))
