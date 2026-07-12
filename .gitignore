@@ -1,0 +1,1 @@
+# Python\n__pycache__/\n*.py[cod]\n*$py.class\n\n# Virtualenv\nenv/\n.env/\n\n# OS generated\n.DS_Store\nThumbs.db\n\n# Security\nsecrets/\ntokens.yaml
