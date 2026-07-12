@@ -1,0 +1,1 @@
+{"agent_config": {"log_level": "INFO", "data_source": "database"}, "analyzer_config": {"analysis_interval": "1h"}}
