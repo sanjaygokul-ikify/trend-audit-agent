@@ -29,16 +29,15 @@ class LogEntry:
     data: Any
 
     def to_string(self) -> str:
-        # Convert log entry to string
-        pass
+        return f"{self.id}:{self.data}"
 
     @classmethod
     def from_string(cls, string: str) -> 'LogEntry':
-        # Convert string to log entry
-        pass
+        id, data = string.split(':')
+        return cls(id, data)
 
 @dataclass
 class Sandbox:
     def execute(self, task: Task) -> Any:
         # Sandbox execution logic
-        pass
+        return task.execute()
